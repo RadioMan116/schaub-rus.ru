@@ -505,7 +505,6 @@ $(document).ready(function () {
 		}, 3000)
 
 	}
-
 	$(".js-header__search").click(function () {
 		if ($(".search__popup").hasClass("search__popup-open") == false) {
 			$(".header .search__popup").addClass("search__popup-open");
