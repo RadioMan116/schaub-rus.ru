@@ -555,7 +555,7 @@
 					// background: rebeccapurple;
 					background-color: #f8f8f8;
 					width: 1000%;
-					height: 106%;
+					height: calc(100% + 16px);
 					z-index: -1;
 					top: -11px;
 					left: -300%;
