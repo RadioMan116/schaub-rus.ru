@@ -192,6 +192,7 @@ $(document).ready(function () {
 		slidesPerView: 1,
 		spaceBetween: 5,
 		allowTouchMove: false,
+		loop: true,
 		// direction: "horizontal",
 		// loop: true,
 		// If we need pagination
@@ -511,7 +512,7 @@ $(document).ready(function () {
 			$(".header__search").addClass("header__search-open");
 			$(".header__overlay").addClass("header__overlay-open");
 			$("html").addClass("fixed");
-			$( ".js-search-header__input" ).focus();
+			$(".js-search-header__input").focus();
 
 		} else {
 			$(".header .search__popup").removeClass("search__popup-open");
@@ -2240,7 +2241,6 @@ $(window).on('load', function () {
 
 
 	}
-
 	if ($('a[data-fancybox="gallery"] img').length) {
 		$('a[data-fancybox="gallery"] img').eq(0).each(function () {
 			var img = new Image($(this));
@@ -2268,8 +2268,6 @@ $(window).on('load', function () {
 		// 	});
 		// }, 300);
 	}
-
-
 	if (windowWidth2 > 767) {
 		var mySwiper4 = new Swiper(".col-md-3 .js-container-upsale", {
 			// Optional parameters
@@ -2386,8 +2384,6 @@ $(window).on('load', function () {
 
 		})();
 	}
-
-
 	if ($('.MultiFile-intercepted').length) {
 
 		// Убрать прикрепленный файл после отправки рекламации
@@ -2402,7 +2398,4 @@ $(window).on('load', function () {
 		});
 
 	}
-
-
-
 });

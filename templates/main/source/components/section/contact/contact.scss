@@ -1,10 +1,13 @@
 .contact {
 	display: flex;
 	flex-wrap: wrap;
+	font-family: Arial,
+		sans-serif;
 
-	p {
+	p,
+	~p {
 		width: 100%;
-		color: #333333;
+		color: #2e2e2e;
 		font-family: Arial;
 		font-size: 14px;
 		line-height: 22px;

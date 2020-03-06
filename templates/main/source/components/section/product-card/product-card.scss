@@ -364,10 +364,11 @@
 		margin-left: 24px;
 		color: #cccccc;
 		display: flex;
+		align-items: center;
 
 		&::before {
 			width: 14px;
-			height: 14px;
+			height: 19px;
 			content: url('../images/price_updated.svg');
 			margin-right: 9px;
 			flex-shrink: 0;
@@ -453,7 +454,7 @@
 		height: 24px;
 		margin-top: 0px;
 		margin-bottom: 0px;
-		color: #60be34;
+		// color: #60be34;
 		font-family: Arial, sans-serif;
 		font-size: 14px;
 
