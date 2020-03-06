@@ -923,6 +923,7 @@
 			width: 12px;
 			height: 12px;
 			background-size: 22px;
+			top: 7px;
 			background-position: center;
 			background-repeat: no-repeat;
 		}
@@ -1309,13 +1310,13 @@
 		&:before {
 			content: '';
 			width: 31px;
-			height: 31px;
+			height: 24px;
 			// transform:;
 			border-radius: 4px;
 			background-color: $base;
-			top: 42%;
+			top: 15px;
 			transform: rotate(-45deg)translateY(-50%);
-			left: 5px;
+			left: 3px;
 			position: absolute;
 			z-index: -1;
 		}
