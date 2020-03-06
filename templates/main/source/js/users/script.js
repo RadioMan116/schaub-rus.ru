@@ -1806,7 +1806,7 @@ $(document).ready(function () {
 	});
 	$(function () {
 		$('[data-fancybox="gallery"]').fancybox({
-
+			loop: true
 		});
 		$("[data-scroll]").click(function () {
 			event.preventDefault();
