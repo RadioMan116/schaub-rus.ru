@@ -486,10 +486,11 @@
 			img {
 
 				max-width: unset;
-				height: 235px;
+				height: 235px !important;
 				display: block;
 				position: absolute;
 				top: 0;
+				max-width: unset !important;
 				// right: 0px;
 				right: -144px;
 			}
