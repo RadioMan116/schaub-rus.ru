@@ -703,17 +703,27 @@
 
 		td {
 			// width: 50% !important;
+			flex-shrink: 0;
+			align-items: center;
 
 			&:first-child {
 				width: 120px !important;
 				padding-left: 0;
+				flex-shrink: 0;
 			}
 
 			&:last-child {
 				margin-left: auto;
+				flex-wrap: wrap;
+
+				p {
+					line-height: 1.2;
+				}
 			}
 
-			i {}
+			i {
+				font-size: 12px;
+			}
 		}
 
 		.table {
