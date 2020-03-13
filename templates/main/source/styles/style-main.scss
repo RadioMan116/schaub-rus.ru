@@ -141,6 +141,7 @@ h1.title {
 }
 
 
+
 .compensate-for-scrollbar {
 	margin-right: 0px !important;
 }
@@ -293,6 +294,9 @@ picture {
 
 	.fixed {
 		width: 100%;
+	}
+	.fancybox-container {
+		top: 60px;
 	}
 
 }
