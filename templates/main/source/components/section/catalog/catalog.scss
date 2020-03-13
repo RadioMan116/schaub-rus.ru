@@ -3085,10 +3085,12 @@
 						height: auto;
 					}
 
-					.catalog__sale {
+					.catalog__sale,
+					.special-offers__sale {
 						height: auto;
 						justify-content: unset;
 						margin-bottom: 0;
+						align-items: center;
 					}
 
 					.catalog__favorite,
@@ -3104,6 +3106,10 @@
 					.catalog__pic {
 						width: auto;
 						height: 160px;
+
+						picture {
+							height: 160px;
+						}
 					}
 
 					.announcing {
