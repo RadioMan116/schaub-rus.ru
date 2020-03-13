@@ -132,7 +132,7 @@
 			background: url("../images/catalog-view-list.svg") no-repeat;
 			margin-right: 7px;
 
-			&:not(.active) {
+			&.active {
 				background: url("../images/catalog-view-list-active.svg") no-repeat;
 			}
 		}
@@ -140,7 +140,7 @@
 		&__table {
 			background: url("../images/catalog-view-table.svg") no-repeat;
 
-			&:not(.active) {
+			&.active {
 				background: url("../images/catalog-view-table-active.svg") no-repeat;
 			}
 		}
