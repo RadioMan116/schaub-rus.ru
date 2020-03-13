@@ -31,8 +31,7 @@
 
 	&__item {
 		// margin-right: 38px;
-		margin-left: 40px;
-		// margin-right: auto;
+		margin-right: auto;
 
 		&:hover {
 
@@ -41,10 +40,6 @@
 				color: #394791;
 				text-decoration: none;
 			}
-		}
-
-		&:first-child {
-			margin-left: 3px;
 		}
 
 		&:last-child {
@@ -65,8 +60,7 @@
 	}
 
 	.city-change {
-		// display: flex;
-		display: none;
+		display: flex;
 		color: #394791;
 		font-family: Arial, sans-serif;
 		font-size: 13px;
@@ -144,7 +138,8 @@
 			border-top: 1px solid #f1f1f1;
 			width: 100%;
 			padding-top: 1em;
-			padding-left: 10px;
+			padding-left: 0px;
+			margin-right: 0;
 
 
 			&.active {
@@ -250,6 +245,7 @@
 				text-align: left;
 				font-style: normal;
 				margin-right: 4px;
+				display: none;
 			}
 		}
 

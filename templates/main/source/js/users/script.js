@@ -10,6 +10,7 @@ $(document).ready(function () {
 		button.onclick = function () {
 			// Toggle class "opened". Set also aria-expanded to true or false.
 			if (-1 !== button.className.indexOf("opened")) {
+				button.parentNode.parentNode.classList.remove("active");
 				button.className = button.className.replace(" opened", "");
 				button.setAttribute("aria-expanded", "false");
 				menuBottom.classList.remove("active");
@@ -18,6 +19,7 @@ $(document).ready(function () {
 				$("html").removeClass("js-height");
 				$(".header__overlay").hide();
 			} else {
+				button.parentNode.parentNode.classList.add("active");
 				button.className += " opened";
 				button.setAttribute("aria-expanded", "true");
 				menuBottom.classList.add("active");
@@ -1004,11 +1006,13 @@ $(document).ready(function () {
 		}
 		(function () {
 			var firstDropdownMenu = document.querySelector('nav.dropdown-menu');
+			var firstFooterDropdownMenu = document.querySelector('.footer__col .menu-footer');
 			$(".header__block_top .menu").appendTo('#js-header__block_bottom .container');
 			$('.js-city-change').appendTo('#js-header__block_bottom .menu');
 			$('#js-menu .header__telephones').appendTo('#js-header__block_bottom .menu');
 
 			firstDropdownMenu.classList.add("active");
+			firstFooterDropdownMenu.classList.add("active");
 		})();
 		(function () {
 			let catalogList = document.querySelector(".catalog__list");

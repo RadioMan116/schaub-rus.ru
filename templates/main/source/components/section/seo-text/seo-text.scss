@@ -220,6 +220,7 @@
 			img {
 				margin: 0 auto 16px;
 				padding: 0 !important;
+				width: 100%;
 			}
 		}
 
@@ -231,7 +232,7 @@
 			padding-bottom: 2px;
 			border-bottom: 1px dashed #394791;
 			width: fit-content !important;
-			position: absolute;
+			position: relative;
 			// left: 16px;
 			bottom: 0px;
 			// width: 100%;
@@ -286,6 +287,7 @@
 			img {
 				margin: 0 -16px 14px;
 				max-width: calc(100% + 32px);
+				width: calc(100% + 32px);
 			}
 		}
 	}
