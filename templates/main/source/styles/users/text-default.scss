@@ -734,6 +734,8 @@
 
 		tr:first-child td:last-child {
 			padding-left: 11px;
+			max-width: unset;
+			margin-left: auto;
 		}
 
 		tr:first-child td:first-child {
