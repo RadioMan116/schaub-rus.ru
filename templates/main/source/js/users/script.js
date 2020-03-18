@@ -1314,7 +1314,6 @@ $(document).ready(function () {
 			$('.js-comparison__link').click(function (e) {
 				e.preventDefault();
 			});
-			$('.js-compare_block-change.active').parent().addClass('order');
 			window.onload = function () {
 				// $('.comparison__main .characteristic__row').each(function (index, el) {
 				// 	var height = $('.swiper-container-comparison .characteristic__row').eq(index).height();
@@ -2178,6 +2177,7 @@ $(window).on('load', function () {
 			// if (select.hasClass('active')) {
 			// 	console.log('1')
 			// }
+			$('.comparison__list').height($('.comparison__item.order').innerHeight());
 		}
 		if (windowWidth2 > 767) {
 			console.log($(".products-line").outerHeight(true))
