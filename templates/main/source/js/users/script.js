@@ -1808,9 +1808,13 @@ $(document).ready(function () {
 		}
 	});
 	$(function () {
-		$('[data-fancybox="gallery"]').fancybox({
-			loop: true
+		$('[data-fancybox]').fancybox({
+			loop: true,
+			animationEffect: "fade",
+			transitionEffect: "fade",
 		});
+
+
 		$("[data-scroll]").click(function () {
 			event.preventDefault();
 			var id = $(this).attr('href'),
@@ -2245,33 +2249,33 @@ $(window).on('load', function () {
 
 
 	}
-	if ($('a[data-fancybox="gallery"] img').length) {
-		$('a[data-fancybox="gallery"] img').eq(0).each(function () {
-			var img = new Image($(this));
-			img.src = $(this).attr('src');
-			if (img.height > 0) {
-				$(this).height(img.height)
-			}
-		});
-		// setInterval(function () {
-		// 	$('a[data-fancybox="gallery"] img').each(function () {
-		// 		var img = new Image($(this));
-		// 		img.src = $(this).attr('src');
-		// 		if (img.height > 0) {
-		// 			$(this).height(img.height)
-		// 		}
-		// 	});
-		// }, 100);
-		// setInterval(function () {
-		// 	$('a[data-fancybox="gallery"] img').eq(0).each(function () {
-		// 		var img = new Image($(this));
-		// 		img.src = $(this).attr('src');
-		// 		if (img.height > 0) {
-		// 			$(this).height(img.height)
-		// 		}
-		// 	});
-		// }, 300);
-	}
+	// if ($('a[data-fancybox="gallery"] img').length) {
+	// 	$('a[data-fancybox="gallery"] img').eq(0).each(function () {
+	// 		var img = new Image($(this));
+	// 		img.src = $(this).attr('src');
+	// 		if (img.height > 0) {
+	// 			$(this).height(img.height)
+	// 		}
+	// 	});
+	// 	// setInterval(function () {
+	// 	// 	$('a[data-fancybox="gallery"] img').each(function () {
+	// 	// 		var img = new Image($(this));
+	// 	// 		img.src = $(this).attr('src');
+	// 	// 		if (img.height > 0) {
+	// 	// 			$(this).height(img.height)
+	// 	// 		}
+	// 	// 	});
+	// 	// }, 100);
+	// 	// setInterval(function () {
+	// 	// 	$('a[data-fancybox="gallery"] img').eq(0).each(function () {
+	// 	// 		var img = new Image($(this));
+	// 	// 		img.src = $(this).attr('src');
+	// 	// 		if (img.height > 0) {
+	// 	// 			$(this).height(img.height)
+	// 	// 		}
+	// 	// 	});
+	// 	// }, 300);
+	// }
 	if (windowWidth2 > 767) {
 		var mySwiper4 = new Swiper(".col-md-3 .js-container-upsale", {
 			// Optional parameters
