@@ -27,7 +27,8 @@
 		// 	border-bottom: 1px solid red !important;
 		// }
 	}
-	picture{
+
+	picture {
 		height: 100%;
 	}
 
@@ -1093,6 +1094,10 @@
 	@media screen and (max-width: 767px) {
 		background: #fff;
 
+		.swiper-pagination-total {
+			margin-left: 16px !important;
+		}
+
 		.fixed-header {
 			max-width: 100%;
 			height: unset;
@@ -1157,9 +1162,7 @@
 				z-index: 10005;
 				display: flex;
 				justify-content: center;
-				.swiper-pagination-total {
-					margin-left: 16px !important;
-				}
+
 			}
 
 			.fixed-header__text {
