@@ -2267,6 +2267,7 @@ $(window).on('load', function () {
 	// 	// }, 300);
 	// }
 	if (windowWidth2 > 767) {
+		$('.articles .articles__text').matchHeight();
 		var mySwiper4 = new Swiper(".col-md-3 .js-container-upsale", {
 			// Optional parameters
 			// slidesPerGroup: 1,
