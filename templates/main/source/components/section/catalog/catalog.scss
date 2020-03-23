@@ -1968,6 +1968,7 @@
 			height: 205px;
 			width: 222px;
 
+
 			img {
 				max-height: 100%;
 			}
@@ -1977,6 +1978,7 @@
 			width: calc(100% - 222px);
 			display: flex;
 			flex-wrap: wrap;
+			padding-left: 16px;
 
 			&-list {
 				display: flex;
