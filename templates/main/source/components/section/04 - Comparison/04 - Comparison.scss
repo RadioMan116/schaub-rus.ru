@@ -189,7 +189,8 @@
 		list-style: none;
 		padding: 0;
 		// height: 30px;
-		max-height: 50px;
+		// max-height: 50px;
+		max-height: 36px;
 		margin: 16px 0 0;
 		// background: white;
 		border-radius: 2px;
@@ -230,6 +231,7 @@
 		flex: 1 0 100%;
 		margin: 0 -1px;
 		display: none;
+		min-height: 24px;
 
 
 		&.active {
@@ -1672,6 +1674,8 @@
 			padding: 11px 12px;
 			line-height: 1;
 			text-decoration: none !important;
+			display: flex;
+			align-items: center;
 		}
 
 		.comparison__text {
