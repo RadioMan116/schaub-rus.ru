@@ -2176,6 +2176,11 @@ $(window).on('load', function () {
 			// 	console.log('1')
 			// }
 			$('.comparison__list').height($('.comparison__item.order').innerHeight());
+			let comparisonItem = document.querySelectorAll('.comparison__item');
+			let comparisonList = document.querySelector('.comparison__list');
+			if (comparisonItem.length < 2) {
+				comparisonList.style.background = "white";
+			}
 		}
 		if (windowWidth2 > 767) {
 			console.log($(".products-line").outerHeight(true))
@@ -2202,7 +2207,7 @@ $(window).on('load', function () {
 				'top': ($(".thead__comparison").height() + 48 + 'px')
 			});
 			$('.comparison__main .characteristic__row').each(function (index, el) {
-				if ($(this).text().length > 60) {
+				if ($(this).text().length > 50) {
 					$(this).addClass('level')
 					$('.js-swiper-comparison .characteristic__row').eq(index).addClass("level");
 					console.log($(this).text())
@@ -2210,7 +2215,7 @@ $(window).on('load', function () {
 			});
 		}
 		$('.comparison__main .characteristic__row').each(function (index, el) {
-			if ($(this).text().length > 60) {
+			if ($(this).text().length > 50) {
 				$(this).addClass('level')
 				$('.js-swiper-comparison .characteristic__row').eq(index).addClass("level");
 				console.log($(this).text())
