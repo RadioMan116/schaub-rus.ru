@@ -188,9 +188,9 @@
 		// flex-wrap: wrap;
 		list-style: none;
 		padding: 0;
-		// height: 30px;
-		// max-height: 50px;
 		height: 25px;
+		max-height: 50px;
+		max-height: 30px;
 		margin: 16px 0 0;
 		// background: white;
 		border-radius: 2px;
@@ -198,13 +198,23 @@
 		// overflow: hidden;
 		border: solid 1px #d6d6d6;
 		border-bottom: 0;
-		background: url("https://icongr.am/entypo/triangle-down.svg") white calc(100% - 10px) 5px/15px no-repeat;
+		background: white;
+
+		&.triangle {
+			background: url("https://icongr.am/entypo/triangle-down.svg") white calc(100% - 10px) 5px/15px no-repeat;
+		}
 
 		&:hover {
 			overflow: unset;
 
 			.comparison__item {
 				display: flex;
+				min-height: 24px;
+				flex: 1 0 100%;
+			}
+
+			.comparison__link {
+				display: block;
 			}
 		}
 
@@ -228,10 +238,10 @@
 		background: white;
 		z-index: 99;
 		display: flex;
-		flex: 1 0 100%;
+
 		margin: 0 -1px;
-		display: none;
-		min-height: 24px;
+		// display: none;
+
 
 
 		&.active {
@@ -245,6 +255,18 @@
 			border-top: 0;
 			border-bottom: 0;
 			display: flex;
+
+			.comparison__link {
+				pointer-events: none;
+				display: block;
+			}
+		}
+
+		&:only-child {
+			.comparison__link {
+				pointer-events: none;
+				display: block;
+			}
 		}
 
 		// &:hover{
@@ -260,10 +282,12 @@
 		font-size: 14px;
 		line-height: 25px;
 		position: relative;
+		display: none;
 		text-decoration: none !important;
 
 		&.active {
 			pointer-events: none;
+			display: block;
 		}
 	}
 
