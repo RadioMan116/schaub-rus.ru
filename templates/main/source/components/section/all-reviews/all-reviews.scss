@@ -146,7 +146,7 @@
 	.reviews-all__header {
 		display: flex;
 		flex-wrap: wrap;
-		width: 317px;
+		// width: 317px;
 		margin-right: auto;
 		height: 100%;
 		margin-left: 40px;
@@ -1037,6 +1037,7 @@
 		align-items: center;
 		z-index: 9;
 		cursor: pointer;
+
 		&:before {
 			content: "";
 			width: 119px;
@@ -1063,6 +1064,7 @@
 
 		&.active {
 			height: auto;
+
 			.reviews-main__switch {
 
 				&:before {
