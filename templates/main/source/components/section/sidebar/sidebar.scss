@@ -512,16 +512,18 @@
 
 	@media screen and (max-width: 380px) {}
 
-	@media screen and (min-width: 768px) {
-		.content-top[data-bg-custom]+.content .col-md-3 {
-			.sidebar {
-				padding-bottom: 400px;
-			}
-		}
 
-		.js-favorite_filter+.sidebar {
-			margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.content-top[data-bg-custom]+.content .col-md-3 {
+		.sidebar {
+			padding-bottom: 400px;
 		}
+	}
+
+	.js-favorite_filter+.sidebar {
+		margin-top: 0;
 	}
 }
 
