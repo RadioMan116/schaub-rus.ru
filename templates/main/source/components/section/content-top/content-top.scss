@@ -101,15 +101,23 @@
 		margin-top: 25px;
 		border-radius: 2px;
 		background: rgba(0, 0, 0, 0.21);
-		padding:  0 11px;
+		padding: 0 11px;
 
 		div {
 			align-items: center;
 		}
 
 		a {
-			color: #ffffff;
+			// color: #ffffff;
+
+			color: #fff;
 		}
+
+
+		&__link {
+			color: #fff;
+		}
+
 		&__text {
 			font-weight: 700;
 		}
@@ -147,7 +155,7 @@
 			width: 100%;
 			padding: 0;
 			max-width: unset !important;
-			    margin-bottom: 3px;
+			margin-bottom: 3px;
 		}
 
 
