@@ -451,6 +451,16 @@
 		.reviews-list__field_footer {
 			padding-top: 16px !important;
 		}
+
+		.ratings~.ratings {
+
+
+			.ratings__star {
+				width: 15px;
+				height: 15px;
+				background-size: 12px 11px;
+			}
+		}
 	}
 }
 
