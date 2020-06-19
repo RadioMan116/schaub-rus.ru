@@ -30,7 +30,7 @@
 		padding-right: 3px;
 		height: 36px;
 		align-items: flex-end;
-		flex-grow: 0;
+		flex-grow: 0 !important;
 
 		.catalog__price {
 			width: calc(100% - 112px);
