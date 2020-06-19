@@ -25,12 +25,12 @@
 
 	.catalog__sale,
 	&__sale {
-		margin-top: unset !important;
+		margin-top: auto !important;
 		margin-bottom: 8px;
 		padding-right: 3px;
 		height: 36px;
 		align-items: flex-end;
-		flex-grow: 1;
+		flex-grow: 0;
 
 		.catalog__price {
 			width: calc(100% - 112px);
