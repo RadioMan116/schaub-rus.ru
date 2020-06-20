@@ -1967,6 +1967,22 @@ $(document).ready(function () {
 
 
 	})();
+
+	(function () {
+
+		let siteMap = document.querySelector('.site-map');
+		if (siteMap) {
+			let siteLink = siteMap.querySelectorAll('.site-map__inner');
+			siteLink.forEach(element => {
+
+				element.addEventListener('click', function () {
+
+					this.classList.toggle('active')
+				});
+			})
+		}
+
+	})();
 });
 $(window).on('load', function () {
 	var windowWidth2 = $(window).width();
