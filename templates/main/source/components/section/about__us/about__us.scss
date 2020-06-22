@@ -27,6 +27,10 @@
 		margin-bottom: 50px;
 	}
 
+	&__img {
+		float: left;
+	}
+
 	// p {
 	// 	width: calc(34% - 28px);
 	// 	color: #333333;
@@ -46,7 +50,7 @@
 	// }
 	p {
 		color: #262626;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 14px;
 		line-height: 22px;
 
@@ -59,6 +63,334 @@
 		margin: 39px 0 42px;
 	}
 
+	.product-card {
+
+		// .product-card__collection
+
+		&__collection {
+			position: relative;
+			margin: 28px 0 0;
+
+			.tags {
+
+				// .tags__title
+
+				&__title {
+					color: #212121;
+					font-family: "Roboto Condensed";
+					font-size: 26px;
+					font-weight: 400;
+					margin-bottom: 18px;
+
+					span {
+						color: #999999;
+					}
+				}
+
+				// .tags__container
+
+				&__container {
+					display: flex;
+					flex-wrap: wrap;
+					margin-bottom: 14px;
+				}
+
+				// .tags__list
+
+				&__list {
+					flex-direction: row;
+				}
+
+				// .tags__item
+
+				&__item {
+					max-width: 100%;
+					border: 0;
+					margin-right: 10px;
+					margin-left: 0;
+					margin-bottom: 10px;
+					padding: 0;
+					height: 200px;
+					display: flex;
+					align-items: baseline;
+					// position: absolute;
+
+					&:hover {
+						background: 0;
+					}
+
+					&.cur {
+						// position: relative;
+					}
+				}
+
+				// .tags__link
+
+				&__link {
+					color: $base;
+					font-family: "Roboto Condensed";
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 18px;
+					border-radius: 4px;
+					background-color: #f8f8f8;
+					border: 1px solid transparent;
+					padding: 11px 26px;
+					margin-left: 11px;
+					// position: absolute;
+					// top: 39px;
+					// left: 0;
+
+					&:hover {
+						border: 1px solid $base;
+					}
+
+					&:first-child {
+						margin-left: 0;
+					}
+
+					&.cur {
+						border: 1px solid $base;
+					}
+				}
+
+				.tags__item+.tags__item {
+					// left: ;
+				}
+
+			}
+
+			.collection {
+
+				// .collection__link
+
+				&__link {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					position: relative;
+					padding: 16px 18px;
+					align-items: center;
+					text-decoration: none !important;
+					position: relative;
+					// max-height: 130px;
+
+					&:hover {
+
+						.collection__detail {
+							display: block;
+						}
+					}
+				}
+
+				&__detail {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					background: #ffffff;
+					top: 0;
+					left: 0;
+					display: none;
+					z-index: 1;
+					padding: 24px 20px 28px;
+				}
+
+				// .collection__text
+
+				&__text {
+					font-family: "Roboto Condensed";
+					font-size: 13px;
+					font-weight: 400;
+					line-height: 22px;
+					max-width: 154px;
+				}
+
+				// .collection__pic
+
+				&__pic {
+					max-width: 194px;
+					align-items: center;
+					margin: 0 auto;
+					max-height: inherit;
+
+					picture {
+						height: 95px;
+					}
+				}
+
+				// .collection__buy
+
+				&__buy {
+					position: absolute;
+					right: 21px;
+					bottom: 11px;
+					padding: 0;
+					color: transparent;
+					background-image: url('../images/shopping-cart.svg');
+					background-size: auto;
+					background-position: 50%;
+					width: 40px;
+					height: 34px;
+					border-radius: 3px;
+
+					font-family: Roboto Condensed;
+					font-size: 14px;
+					background-color: $base;
+					background-repeat: no-repeat;
+					box-shadow: 0 0 0 0 rgba(0, 0, 0, .16);
+					text-decoration: none;
+					font-weight: 400;
+					text-transform: uppercase;
+					margin: 0;
+
+					line-height: 1;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border: none;
+					cursor: pointer;
+					text-align: center;
+
+					b {
+						font-size: 0;
+					}
+				}
+
+				// .collection__info
+
+				&__info {}
+
+				// .collection__sale
+
+				&__sale {
+					font-size: 20px;
+					line-height: 1.2;
+					font-weight: 600;
+					font-style: normal;
+					font-stretch: normal;
+					letter-spacing: normal;
+					text-align: left;
+					color: #2e2e2e;
+					// margin-right: 10%;
+					white-space: nowrap;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					margin-top: 8px;
+					width: calc(100% - 45px);
+
+					i {
+						font-size: 14px;
+						font-style: normal;
+						margin-left: 5px;
+					}
+				}
+
+			}
+
+
+			.swiper-container {
+				position: absolute;
+				width: 100%;
+				left: 0vw;
+				align-self: flex-end;
+				opacity: 0;
+				// &.active {
+				// 	left: unset;
+				// 	position: relative;
+				// }
+
+			}
+
+
+			.cur {
+				z-index: 9;
+
+				.swiper-container {
+					// position: absolute;
+					// width: 100%;
+					// left: -100vw;
+
+					// &.active {
+					left: 0;
+					opacity: 1;
+					z-index: 9;
+					// position: relative;
+					// }
+
+				}
+
+				.tags__link {
+					border: 1px solid $base;
+				}
+			}
+
+			.swiper-wrapper {}
+
+			.swiper-slide {
+				border: 1px solid #eeeeee;
+				background-color: #ffffff;
+			}
+
+			.swiper-pagination-collection {
+				top: 14px;
+				right: 124px;
+				display: flex;
+				justify-content: flex-end;
+				width: auto;
+				position: absolute;
+			}
+
+			.swiper-pagination-bullet {
+				margin-left: 16px;
+			}
+
+			.collection__prev {
+				background: url("../images/special-offers_prev.png") 0/34px no-repeat;
+				position: absolute;
+				top: 22px;
+				right: 48px;
+				left: unset;
+				width: 34px;
+				height: 34px;
+
+				&:hover {
+					background: url("../images/swiper-button-color-prev.png") 0/34px no-repeat;
+				}
+			}
+
+			.collection__next {
+				background: url("../images/special-offers_next.png") 0/34px no-repeat;
+				top: 22px;
+				right: 3px;
+				width: 34px;
+				height: 34px;
+
+				&:hover {
+					background: url("../images/swiper-button-color-next.png") 0/34px no-repeat;
+				}
+			}
+
+			.swiper-pagination-collection,
+			.collection__prev,
+			.collection__next {
+				display: none;
+
+
+			}
+
+			.cur {
+
+				.swiper-pagination-collection,
+				.collection__prev,
+				.collection__next {
+					display: flex;
+
+
+				}
+			}
+		}
+	}
 
 	@media screen and (max-width: 768px) {
 

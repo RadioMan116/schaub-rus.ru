@@ -1983,6 +1983,99 @@ $(document).ready(function () {
 		}
 
 	})();
+
+
+	(function () {
+		let collection = document.querySelector('.product-card__collection');
+		if (collection) {
+			let tabs = collection.querySelectorAll(".tags__list li");
+			let collectionChild = collection.querySelectorAll('.swiper-container');
+			let collectionNext = collection.querySelectorAll('.collection__next');
+			let collectionPrev = collection.querySelectorAll('.collection__prev');
+			let collectionPagination = collection.querySelectorAll('.swiper-pagination-collection');
+			let collectionHeight = [];
+			let maxHeight = []
+
+			collectionNext.forEach((element, index) => {
+				element.classList.add("instance-button-" + index);
+			});
+			collectionPrev.forEach((element, index) => {
+				element.classList.add("instance-button-" + index);
+			});
+			collectionPagination.forEach((element, index) => {
+				element.classList.add("instance-pagination-" + index);
+			});
+			collectionChild.forEach((element, index) => {
+				element.classList.add("instance-" + index);
+				var mySwiper71 = new Swiper(".product-card__collection .swiper-container.instance-" + index, {
+					// Optional parameters
+					// slidesPerGroup: 1,
+					slidesPerView: 3,
+					spaceBetween: 24,
+					// allowTouchMove: false,
+					// direction: "horizontal",
+					// loop: true,
+					// If we need pagination
+					navigation: {
+						nextEl: ".collection__next.instance-button-" + index,
+						prevEl: ".collection__prev.instance-button-" + index
+					},
+					pagination: {
+						el: ".swiper-pagination-collection.instance-pagination-" + index,
+						clickable: true
+					},
+					breakpoints: {
+						// when window width is <= 320px
+						// 500: {
+						// 	allowTouchMove: true,
+						// 	slidesPerView: 1,
+						// },
+						600: {
+							allowTouchMove: true,
+							slidesPerView: 1.4,
+						},
+						767: {
+							allowTouchMove: true,
+							slidesPerView: 2,
+							spaceBetween: 1,
+						}
+					}
+					// Navigation arrows
+					// navigation: {
+					// 	nextEl: ".main_next",
+					// 	prevEl: ".main_prev"
+					// },
+
+					// And if we need scrollbar
+					// scrollbar: {
+					// 	el: ".swiper-scrollbar"
+					// }
+				})
+				collectionHeight.push(element.offsetHeight + 68);
+
+			});
+			maxHeight.push(Math.max.apply(Math, collectionHeight))
+
+			tabs.forEach((element, index) => {
+				element.classList.add("tabs-" + index);
+				element.style.height = `${maxHeight}px`;
+				element.addEventListener('click', function () {
+					tabs.forEach((element, i) => {
+						element.classList.remove('cur');
+						collectionChild[i].classList.remove('active');
+						collectionNext[i].classList.remove('active');
+						collectionPrev[i].classList.remove('active');
+						collectionPagination[i].classList.remove('active');
+					});
+					this.classList.add('cur');
+					collectionChild[index].classList.add('active');
+					collectionNext[index].classList.add('active');
+					collectionPrev[index].classList.add('active');
+					collectionPagination[index].classList.add('active');
+				});
+			});
+		}
+	})();
 });
 $(window).on('load', function () {
 	var windowWidth2 = $(window).width();

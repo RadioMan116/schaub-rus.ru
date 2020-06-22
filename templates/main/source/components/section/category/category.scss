@@ -53,7 +53,8 @@
 				color: #ffffff;
 			}
 		}
-		*{
+
+		* {
 			text-decoration: none !important;
 		}
 	}
@@ -85,6 +86,28 @@
 	&+.special-offers {
 		margin-top: 56px;
 	}
+
+	.about-us & {
+
+		&__item {
+			width: calc(50% - 25px);
+
+			&:nth-child(3n + 2) {
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			&:nth-child(2n + 2) {
+				margin-left: 33px;
+				margin-right: 0;
+			}
+
+			&:nth-child(-n + 4) {
+				margin-bottom: 25px;
+			}
+		}
+	}
+
 
 	@media screen and (max-width: 767px) {
 		padding-bottom: 0px;
