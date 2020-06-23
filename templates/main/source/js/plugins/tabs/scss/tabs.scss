@@ -1,0 +1,73 @@
+.tabs {
+	position: relative;
+	width: 100%;
+	margin-bottom: 60px;
+
+	.main__items {
+		position: absolute;
+		left: -1000%;
+		z-index: 0;
+		opacity: 0;
+		top: 0;
+		width: 100%;
+		transition: opacity 500ms;
+
+		&.active {
+			left: 0;
+			opacity: 1;
+			z-index: 1;
+			position: relative;
+		}
+	}
+
+	&__info {
+		height: 32px;
+		border-radius: 5px;
+		background-color: $white;
+		color: #000000;
+		font-size: 14px;
+		font-weight: 400;
+		padding: 0 24px;
+		position: absolute;
+		right: 100px;
+		top: -37px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@media (min-width: 768px) {
+			&_fixed {
+				right: 0;
+			}
+		}
+	}
+
+	@media (--phone) {
+		&_detail {
+			margin-bottom: 30px;
+		}
+
+		&__info {
+			position: absolute;
+			left: 0;
+			bottom: -30px;
+			width: 100%;
+			top: auto;
+		}
+	}
+}
+
+// <!-- begin tabs -->
+// <div class="tabs tabs_detail">
+// 	<div class="tabs__inner js-tabs__inner"id="js-tabs-1">
+// 	</div>
+// 	<div class="tabs__inner js-tabs__inner"id="js-tabs-2">
+// 	</div>
+// 	<div class="tabs__inner js-tabs__inner"id="js-tabs-3">
+// 	</div>
+// 	<div class="tabs__inner js-tabs__inner"id="js-tabs-4">
+// 	</div>
+// 	<div class="tabs__inner js-tabs__inner"id="js-tabs-5">
+// 	</div>
+// </div>
+// <!-- end tabs  -->
