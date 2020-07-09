@@ -48,10 +48,11 @@
 		position: relative;
 		background: url('https://icongr.am/entypo/chevron-small-down.svg?color=b0b0b0');
 		background-size: 25px;
-		background-position: 22px 0px;
+		background-position: 22px 3px;
 		background-repeat: no-repeat;
 		padding-left: 53px;
 		cursor: pointer;
+		transition: none;
 
 
 		&:before {
@@ -85,7 +86,7 @@
 		&.active {
 			background: url('https://icongr.am/entypo/chevron-small-up.svg?color=394791');
 			background-size: 25px;
-			background-position: 19px 3px;
+			background-position: 22px 3px;
 			background-repeat: no-repeat;
 
 			.site-map__link {
