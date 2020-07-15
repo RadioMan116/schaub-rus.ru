@@ -243,13 +243,13 @@
 						// height: 95px;
 						img {
 
-							height: fit-content !important;
+							// height: fit-content !important;
 
 						}
 					}
 
 					img {
-						width: 100%;
+						width: auto;
 						height: auto;
 						object-fit: contain;
 					}
