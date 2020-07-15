@@ -239,12 +239,18 @@
 					margin-bottom: 16px;
 
 					picture {
+
 						// height: 95px;
+						img {
+
+							height: fit-content !important;
+
+						}
 					}
 
 					img {
 						width: 100%;
-						height: fit-content;
+						height: auto;
 						object-fit: contain;
 					}
 				}
