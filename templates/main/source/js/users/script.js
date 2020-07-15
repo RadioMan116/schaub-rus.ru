@@ -1989,7 +1989,7 @@ $(document).ready(function () {
 		let collection = document.querySelector('.product-card__collection');
 		if (collection) {
 			let tabsParent = collection.querySelector(".tags__list");
-			let tabs = collection.querySelectorAll(".tags__list li");
+			let tabs = collection.querySelectorAll(".tags__list .tags__item");
 			let collectionChild = collection.querySelectorAll('.swiper-container');
 			let collectionNext = collection.querySelectorAll('.collection__next');
 			let collectionPrev = collection.querySelectorAll('.collection__prev');
