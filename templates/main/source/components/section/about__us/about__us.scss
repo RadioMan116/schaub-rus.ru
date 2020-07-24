@@ -602,9 +602,11 @@
 
 				.swiper-pagination-collection {
 					display: flex;
+					flex-wrap: wrap;
 
 					.swiper-pagination-bullet {
 						display: block !important;
+						margin-bottom: 8px;
 					}
 				}
 			}
