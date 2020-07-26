@@ -635,6 +635,7 @@
 				height: 100px;
 				flex-grow: 0;
 				width: 94px;
+				margin-right: 16px;
 
 				img {
 					max-width: 94px;
@@ -654,7 +655,7 @@
 			}
 
 			.collection__desc {
-				width: calc(100% - 94px);
+				width: calc(100% - 110px);
 			}
 
 			.collection__info {
