@@ -1153,7 +1153,7 @@ $(document).ready(function() {
 				});
 				$(document).click(function() {
 					$(butt).removeClass("down");
-					$(ul).slideUp(200);
+					// $(ul).slideUp(200);
 				});
 			});
 			console.log("compare_table")
