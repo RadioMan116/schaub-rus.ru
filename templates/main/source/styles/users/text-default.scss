@@ -41,7 +41,6 @@
 		font-size: 20px;
 		font-weight: 400;
 		line-height: 28px;
-
 	}
 
 	h4 {
@@ -106,7 +105,6 @@
 				text-align: left;
 				color: #262626;
 			}
-
 		}
 
 		span {
@@ -132,12 +130,10 @@
 
 		// img {
 		// 	margin: 0 auto;
-
 		// 	&:nth-last-child(2):first-child,
 		// 	&:nth-last-child(2):first-child~img {
 		// 		color: green;
 		// 	}
-
 		// }
 		img {
 			margin-right: 0;
@@ -145,9 +141,6 @@
 			margin-bottom: 0px;
 		}
 	}
-
-
-
 
 	ol {
 		color: #333333;
@@ -183,7 +176,6 @@
 		// li:first-child {
 		// 	margin-top: 16px;
 		// }
-
 		b {
 			margin-bottom: 16px
 		}
@@ -225,7 +217,6 @@
 		margin: 5px 0;
 	}
 
-
 	tr {
 		z-index: 99;
 		list-style: none;
@@ -249,7 +240,6 @@
 				font-size: 12px;
 				font-weight: 700;
 				padding: 11px 7px 13px;
-
 			}
 		}
 
@@ -302,13 +292,11 @@
 		}
 	}
 
-
 	// div:not(.return-exchange__field) {
 	// 	display: block;
 	// 	// flex-wrap: wrap;
 	// 	// justify-content: center;
 	// }
-
 	.table {
 		width: 100%;
 		margin-bottom: 22px;
@@ -335,7 +323,6 @@
 					text-align: right;
 					padding-right: 50px;
 				}
-
 			}
 		}
 	}
@@ -352,7 +339,6 @@
 		margin-bottom: 2rem;
 
 		b {
-
 			width: 100%;
 			margin-bottom: 13px;
 			color: #333333;
@@ -408,7 +394,6 @@
 		}
 	}
 
-
 	.maps {
 		padding-top: 18px;
 		border-bottom: 1px solid #e2e2e2;
@@ -436,9 +421,7 @@
 		display: block;
 	}
 
-
 	&.seo-text {
-
 		h2 {
 			color: #262626;
 			font-size: 26px;
@@ -462,7 +445,6 @@
 
 		p {
 			margin-bottom: 10px;
-
 		}
 
 		img {
@@ -470,7 +452,6 @@
 		}
 
 		// .official-dealers__link
-
 		&__link {
 			width: calc(50%-16px);
 			display: flex;
@@ -482,7 +463,6 @@
 
 			&:nth-of-type(1) {
 				margin-right: 29px;
-
 			}
 
 			&:after {
@@ -532,7 +512,6 @@
 		display: none;
 	}
 
-
 	.pic_left {
 		float: left;
 		margin: 5px 25px 20px 0;
@@ -545,7 +524,6 @@
 
 	.table_delivery {
 		tr {
-
 			td:last-child {
 				b {
 					font-family: Arial;
@@ -555,9 +533,7 @@
 				}
 			}
 
-
 			td {
-
 				padding: 11px 7px 13px;
 
 				&[colspan="2"] {
@@ -566,14 +542,11 @@
 						font-weight: 700;
 					}
 				}
-
-
 			}
 		}
 	}
 
 	.page {
-
 		&__title {
 			font-size: 28px;
 			line-height: 28px;
@@ -640,15 +613,14 @@
 			font-weight: 500;
 			pointer-events: none;
 			margin-bottom: 20px;
-			// top: -22px;
 
+			// top: -22px;
 			noindex+& {
 				top: -60px;
 				margin-bottom: 0;
 			}
 		}
 	}
-
 
 	@media screen and (max-width: 767px) {
 		margin-bottom: 30px;
@@ -683,7 +655,6 @@
 		p {
 			font-size: 14px;
 			line-height: 22px;
-
 			margin-bottom: 24px;
 
 			&+table+p {
@@ -691,14 +662,12 @@
 				margin-bottom: 35px;
 			}
 
-
 			&:last-child {
 				margin-bottom: 0;
 			}
 		}
 
 		b {
-
 			width: 100%;
 			margin-bottom: 11px;
 			font-size: 16px;
@@ -719,7 +688,6 @@
 			margin-bottom: 0;
 
 			li {
-
 				margin-left: 25px;
 				line-height: 21px;
 			}
@@ -741,7 +709,6 @@
 		}
 
 		&.seo-text {
-
 			h2 {
 				color: #262626;
 				font-size: 22px;
@@ -775,7 +742,6 @@
 
 				&:nth-of-type(1) {
 					margin-right: 0px;
-
 				}
 
 				.official-dealers__pic {
@@ -830,13 +796,10 @@
 				.mobile {
 					display: none;
 				}
-
 			}
 		}
 
-
 		tr {
-
 			&:first-child {
 				td {}
 			}
@@ -865,8 +828,6 @@
 				}
 			}
 
-
-
 			i {
 				font-size: 12px;
 			}
@@ -887,8 +848,6 @@
 			width: 100%;
 
 			tbody {
-
-
 				.table_tr:nth-child(odd) {}
 
 				.table_tr {
@@ -910,7 +869,6 @@
 					padding: 0;
 					text-align: left;
 					width: unset !important;
-
 
 					&:first-child {
 						margin-bottom: 10px;
@@ -937,7 +895,6 @@
 				}
 			}
 
-
 			a {
 				margin-top: 22px;
 			}
@@ -955,7 +912,6 @@
 				.time {
 					b {
 						display: block;
-
 					}
 
 					br {
@@ -976,6 +932,16 @@
 		table {
 			display: block;
 			overflow-x: auto;
+
+			&.page__table {
+				tbody {
+					display: table-row-group;
+
+					tr td:not(:first-child) {
+						min-width: unset;
+					}
+				}
+			}
 
 			tbody {
 				display: flex;
@@ -1014,9 +980,7 @@
 						}
 					}
 				}
-
 			}
-
 		}
 
 		.seo-text__button {
@@ -1068,7 +1032,6 @@
 					left: 80px;
 				}
 			}
-
 		}
 	}
 }

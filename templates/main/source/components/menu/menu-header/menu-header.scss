@@ -3,11 +3,9 @@
 		transition: 0.2s;
 	}
 
-
 	.header__telephones {
 		display: none;
 		align-items: center;
-
 	}
 
 	display: flex;
@@ -119,14 +117,11 @@
 				// box-shadow: 0 5px 9px 0 #000;
 			}
 		}
-
 	}
-
 
 	.abuse__button {
 		display: none;
 	}
-
 
 	@media (max-width: 767px) {
 		display: none;
@@ -134,8 +129,6 @@
 		nav {
 			display: flex;
 			flex-wrap: wrap;
-
-
 		}
 
 		.city-change {
@@ -146,17 +139,12 @@
 			padding-left: 0px;
 			margin-right: 0;
 
-
 			&.active {
 				.city-change__popup {
-
 					min-width: unset !important;
 					left: 5px;
 				}
 			}
-
-
-
 
 			&__title {}
 
@@ -208,6 +196,11 @@
 			width: 50%;
 			margin-top: 17px;
 			cursor: pointer;
+			padding-left: 4px;
+
+			&:first-child {
+				margin-left: 0;
+			}
 		}
 
 		.header__block_bottom & {
@@ -285,13 +278,7 @@
 //     padding-right: unset;
 //   }
 // }
-
 @media screen and (max-width: 480px) {
-
-
-
-
-
 	// .header .header__block_top {
 	//   height: unset;
 	// }
