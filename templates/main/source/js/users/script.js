@@ -1871,85 +1871,26 @@ $(document).ready(function() {
 			tabsParent.style.paddingBottom = `${maxHeight - 50}px`;
 		}
 	})();
-	// (() => {
-	// 	var jsTriggers = document.querySelectorAll('.js-tab-trigger');
-	// 	let collection = document.querySelector('.main__items');
-	// 	jsTriggers.forEach(function (trigger) {
-	// 		trigger.addEventListener('click', function (e) {
-	// 			var id = this.getAttribute('data-tab'),
-	// 				content = document.querySelector('.js-tab-content[data-tab="' + id + '"]'),
-	// 				activeTrigger = document.querySelector('.js-tab-trigger.active'),
-	// 				activeContent = document.querySelector('.js-tab-content.active');
-	// 			e.preventDefault();
-	// 			activeTrigger.classList.remove('active');
-	// 			trigger.classList.add('active');
-	// 			activeContent.classList.remove('active');
-	// 			content.classList.add('active');
-	// 		});
-	// 	});
-	// 	let collectionChild = collection.querySelectorAll('.swiper-container');
-	// 	let collectionNext = collection.querySelectorAll('.collection__next');
-	// 	let collectionPrev = collection.querySelectorAll('.collection__prev');
-	// 	let collectionPagination = collection.querySelectorAll('.swiper-pagination-collection');
-	// 	let collectionHeight = [];
-	// 	let maxHeight = []
-	// 	collectionNext.forEach((element, index) => {
-	// 		element.classList.add("instance-button-" + index);
-	// 	});
-	// 	collectionPrev.forEach((element, index) => {
-	// 		element.classList.add("instance-button-" + index);
-	// 	});
-	// 	collectionPagination.forEach((element, index) => {
-	// 		element.classList.add("instance-pagination-" + index);
-	// 	});
-	// 	collectionChild.forEach((element, index) => {
-	// 		element.classList.add("instance-" + index);
-	// 		var mySwiper71 = new Swiper(".swiper-container.instance-" + index, {
-	// 			// Optional parameters
-	// 			// slidesPerGroup: 1,
-	// 			slidesPerView: 3,
-	// 			spaceBetween: 24,
-	// 			// allowTouchMove: false,
-	// 			// direction: "horizontal",
-	// 			// loop: true,
-	// 			// If we need pagination
-	// 			navigation: {
-	// 				nextEl: ".collection__next.instance-button-" + index,
-	// 				prevEl: ".collection__prev.instance-button-" + index
-	// 			},
-	// 			pagination: {
-	// 				el: ".swiper-pagination-collection.instance-pagination-" + index,
-	// 				clickable: true
-	// 			},
-	// 			breakpoints: {
-	// 				// when window width is <= 320px
-	// 				// 500: {
-	// 				// 	allowTouchMove: true,
-	// 				// 	slidesPerView: 1,
-	// 				// },
-	// 				600: {
-	// 					allowTouchMove: true,
-	// 					slidesPerView: 1.4,
-	// 				},
-	// 				767: {
-	// 					allowTouchMove: true,
-	// 					slidesPerView: 2,
-	// 					spaceBetween: 1,
-	// 				}
-	// 			}
-	// 			// Navigation arrows
-	// 			// navigation: {
-	// 			// 	nextEl: ".main_next",
-	// 			// 	prevEl: ".main_prev"
-	// 			// },
-	// 			// And if we need scrollbar
-	// 			// scrollbar: {
-	// 			// 	el: ".swiper-scrollbar"
-	// 			// }
-	// 		})
-	// 		collectionHeight.push(element.offsetHeight + 68);
-	// 	});
-	// })();
+	tippy('.link-pop-glossary .icons-prop-item', {
+		// change these to your liking
+		arrow: true,
+		placement: 'top', // top, right, bottom, left
+		// trigger: 'click',
+		distance: 15, //px or string
+		// maxWidth: 300, //px or string
+		interactive: true,
+		// leave these as they are
+		// followCursor: true,
+		allowHTML: true,
+		theme: 'light',
+		appendTo: () => document.body,
+		// ignoreAttributes: true,
+		content(reference) {
+			const title = reference.getAttribute('title');
+			reference.removeAttribute('title');
+			return title;
+		},
+	});
 });
 $(window).on('load', function() {
 	var windowWidth2 = $(window).width();

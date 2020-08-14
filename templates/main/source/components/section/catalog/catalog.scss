@@ -63,7 +63,7 @@
 		display: flex;
 		align-items: flex-start;
 		padding: 0px;
-		flex-grow: 1;
+		flex-grow: 0;
 		flex-wrap: wrap;
 		position: relative;
 		margin: 0 -2px;
@@ -319,6 +319,8 @@
 		margin: 0 0 14px 0;
 		flex-shrink: 0;
 		padding-right: 3px;
+		flex-grow: 1;
+		align-content: baseline;
 		// height: 20%;
 	}
 
