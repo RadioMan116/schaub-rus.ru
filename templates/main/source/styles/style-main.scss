@@ -221,6 +221,63 @@ picture {
 	}
 }
 
+.go_to_top {
+	position: fixed;
+	bottom: 150px;
+	right: 25px;
+	color: #474646 !important;
+	text-align: center;
+	padding-top: 10px;
+	-webkit-transform: translate(0, 300px);
+	transform: translate(0, 300px);
+	z-index: 1000;
+	text-decoration: none;
+
+	&:after {
+		content: 'наверх';
+	}
+}
+
+.go_to_top:before {
+	content: '';
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: url(../images/next_white.svg) 50% 50% no-repeat #394791;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .6);
+	background-size: auto 60%;
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	transition: all .4s;
+	position: absolute;
+	top: -45px;
+	left: 50%;
+	margin-left: -25px
+}
+
+.go_to_top:hover:before {
+	margin-top: -5px
+}
+
+.go_to_top.visible_goto {
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0)
+}
+
+@media (max-width: 768px) {
+	.go_to_top {
+		bottom: 100px
+	}
+}
+
+.to-top {
+	font-size: 20px
+}
+
+.to-top span {
+	color: #01426A
+}
+
 @media screen and (max-width: 767px) {
 	h1.title {
 		font-size: 30px;
