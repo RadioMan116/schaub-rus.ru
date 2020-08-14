@@ -42,7 +42,6 @@ body.fixed {
 		padding: 1rem;
 
 		&__title {
-
 			font-size: 24px;
 			font-weight: 500;
 			font-style: normal;
@@ -55,7 +54,6 @@ body.fixed {
 		}
 
 		&__text {
-
 			font-size: 14px;
 			font-weight: normal;
 			font-style: normal;
@@ -100,12 +98,15 @@ h1.title {
 
 .col-md-3 {
 	padding-left: 0;
-
 }
 
-
-
-
+div[id^=wait] {
+	position: fixed !important;
+	top: 50% !important;
+	transform: translateX(-50%)translateY(-50%) !important;
+	left: 50% !important;
+	// <div id="wait_0.4884693106661806"style="background: url(&quot;/bitrix/js/main/core/images/wait.gif&quot;) 10px center no-repeat scroll rgb(252, 247, 209); border: 1px solid rgb(225, 181, 45); color: black; font-family: Verdana, Arial, sans-serif; font-size: 11px; padding: 10px 30px 10px 37px; position: absolute; z-index: 10000; text-align: center; top: 885px; left: 1685px;">Загрузка...</div>
+}
 
 .compensate-for-scrollbar {
 	margin-right: 0px !important;
@@ -119,47 +120,35 @@ body.fancybox-active {
 // 	.content {
 // 		display: flex;
 // 		flex-direction: column;
-
 // 		.gallery~div,
 // 		.gallery~article {
 // 			background: white;
 // 		}
-
 // 		.special-offers {
 // 			margin: 0;
 // 			padding: 26px 0 30px;
 // 		}
-
 // 		.gallery {
 // 			margin-bottom: 58px;
 // 			// padding-bottom: 60px;
 // 		}
-
 // 		.main-tags {
 // 			margin-bottom: 0px;
 // 			padding-bottom: 0px;
 // 		}
-
 // 		.reviews-main {
-
 // 			margin-bottom: 0px;
 // 			padding-bottom: 42px;
 // 		}
-
 // 		.category {
 // 			padding-top: 15px;
 // 		}
 // 	}
-
 // 	.header {
 // 		background: white;
 // 	}
-
 // 	background: url('../images/l-rus-pattern.png');
 // }
-
-
-
 .docs-frame {
 	// flex-shrink: 0;
 	max-width: 100%;
@@ -250,7 +239,6 @@ picture {
 		}
 	}
 
-
 	.col-md-3 {
 		padding-right: 0;
 		padding-left: 0;
@@ -269,5 +257,4 @@ picture {
 	// 	top: 60px;
 	// 	height: calc(100% - 60px);
 	// }
-
 }
