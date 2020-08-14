@@ -940,6 +940,18 @@
 					tr td:not(:first-child) {
 						min-width: unset;
 					}
+
+					td:first-child {
+						width: auto !important;
+						padding-left: 5px;
+						-ms-flex-negative: 0;
+						flex-shrink: 0;
+						margin-right: 0;
+					}
+
+					tr:first-child td:first-child {
+						padding-left: 7px;
+					}
 				}
 			}
 
