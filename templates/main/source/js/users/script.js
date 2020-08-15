@@ -1166,10 +1166,10 @@ $(document).ready(function() {
 			if (comparisonItem.length > 1) {
 				comparisonList.classList.add('triangle')
 			}
-			$('.comparison__item').click(function() {
-				$('.comparison__item').removeClass('order')
-				$(this).addClass('order')
-			})
+			// $('.comparison__item').click(function() {
+			// 	$('.comparison__item').removeClass('order')
+			// 	$(this).addClass('order')
+			// })
 			window.onload = function() {
 				// $('.comparison__main .characteristic__row').each(function (index, el) {
 				// 	var height = $('.swiper-container-comparison .characteristic__row').eq(index).height();
@@ -2319,7 +2319,7 @@ $(window).on('load', function() {
 	});
 	var btn = $('.go_to_top');
 	$(window).scroll(function() {
-		if ($(window).scrollTop() > 300) {
+		if ($(window).scrollTop() > 500) {
 			btn.addClass('visible_goto');
 		} else {
 			btn.removeClass('visible_goto');
