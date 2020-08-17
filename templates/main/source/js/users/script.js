@@ -460,26 +460,28 @@ $(document).ready(function() {
 	})
 	$('.load-more').click(function() {
 		$(document).ajaxSuccess(function() {
-			tippy('.link-pop-glossary .icons-prop-item', {
-				// change these to your liking
-				arrow: true,
-				placement: 'top', // top, right, bottom, left
-				// trigger: 'click',
-				distance: 15, //px or string
-				// maxWidth: 300, //px or string
-				interactive: true,
-				// leave these as they are
-				// followCursor: true,
-				allowHTML: true,
-				theme: 'light',
-				appendTo: () => document.body,
-				// ignoreAttributes: true,
-				content(reference) {
-					const title = reference.getAttribute('title');
-					reference.removeAttribute('title');
-					return title;
-				},
-			});
+			if (document.querySelectorAll('.link-pop-glossary .icons-prop-item[title]').length > 0) {
+				tippy('.link-pop-glossary .icons-prop-item[title]', {
+					// change these to your liking
+					arrow: true,
+					placement: 'top', // top, right, bottom, left
+					// trigger: 'click',
+					distance: 15, //px or string
+					// maxWidth: 300, //px or string
+					interactive: true,
+					// leave these as they are
+					// followCursor: true,
+					allowHTML: true,
+					theme: 'light',
+					appendTo: () => document.body,
+					// ignoreAttributes: true,
+					content(reference) {
+						const title = reference.getAttribute('title');
+						reference.removeAttribute('title');
+						return title;
+					},
+				});
+			}
 		});
 	})
 	if ($(".gallery__item").length) {
