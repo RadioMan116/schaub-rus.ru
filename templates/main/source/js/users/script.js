@@ -1154,6 +1154,11 @@ $(document).ready(function() {
 	});
 	$(function() {
 		if ($('#compare_table').length > 0) {
+			let comparisonItem = document.querySelectorAll('.comparison__item');
+			let comparisonList = document.querySelector('.comparison__list');
+			if (comparisonItem.length > 1) {
+				comparisonList.classList.add('triangle')
+			}
 			$(function() {
 				compareArray.init({
 					table: document.getElementById("compare_table"),
@@ -1187,11 +1192,6 @@ $(document).ready(function() {
 			$('.js-comparison__link').click(function(e) {
 				e.preventDefault();
 			});
-			let comparisonItem = document.querySelectorAll('.comparison__item');
-			let comparisonList = document.querySelector('.comparison__list');
-			if (comparisonItem.length > 1) {
-				comparisonList.classList.add('triangle')
-			}
 			// $('.comparison__item').click(function() {
 			// 	$('.comparison__item').removeClass('order')
 			// 	$(this).addClass('order')

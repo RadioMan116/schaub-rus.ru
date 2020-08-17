@@ -265,9 +265,11 @@
 			}
 		}
 
-		// &:hover{
-		// 	background-color: hsla(0,0%,93%,.29);
-		// }
+		&:hover {
+			a {
+				background-color: #39479185;
+			}
+		}
 	}
 
 	&__link {
@@ -279,6 +281,7 @@
 		position: relative;
 		display: none;
 		text-decoration: none !important;
+		width: 100%;
 
 		&.active {
 			pointer-events: none;
