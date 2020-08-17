@@ -275,6 +275,10 @@
 				margin-bottom: 1rem;
 			}
 		}
+
+		.swiper-container {
+			height: fit-content;
+		}
 	}
 
 	.border {
@@ -990,7 +994,7 @@
 		}
 
 		.swiper-slide {
-			margin-left: -1%;
+			// margin-left: -1%;
 			padding: 31px 15px 18px !important;
 		}
 
@@ -1157,6 +1161,10 @@
 					}
 				}
 			}
+		}
+
+		.swiper-wrapper {
+			padding: 0;
 		}
 	}
 }
