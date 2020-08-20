@@ -1888,7 +1888,7 @@
 			.catalog__item {
 				max-width: 100%;
 				width: 100%;
-				flex-basis: 100%;
+				flex-basis: auto;
 				flex-direction: row;
 				flex-wrap: wrap;
 
@@ -1902,6 +1902,12 @@
 
 				margin-bottom: 8px;
 			}
+		}
+
+		.link-pop-glossary {
+			position: relative;
+			cursor: pointer;
+			width: calc(100%/8);
 		}
 
 		.catalog__pic {
