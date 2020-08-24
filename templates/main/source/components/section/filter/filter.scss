@@ -1191,6 +1191,7 @@
 			opacity: 0;
 			max-height: 0;
 			max-width: 0;
+			display: none;
 		}
 
 		&[data-glossary="show"] {
@@ -1426,7 +1427,7 @@
 			align-items: baseline;
 
 			.checkbox {
-				position: unset;
+				position: relative;
 			}
 		}
 
