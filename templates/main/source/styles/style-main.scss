@@ -112,8 +112,30 @@ div[id^=wait] {
 	margin-right: 0px !important;
 }
 
-body.fancybox-active {
-	overflow: unset !important;
+body {
+	&.fancybox-active {
+		overflow: unset !important;
+	}
+
+	&.loading-ajax {
+		&:before {
+			content: '';
+			background: url("../images/blue-loader.svg") rgba(255, 255, 255, .8) no-repeat center 40%;
+			top: 50%;
+			transform: translateX(-50%)translateY(-50%);
+			left: 50%;
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			z-index: 9999;
+			width: 100vw;
+			height: 100vh;
+
+			@media screen and (max-width: 767px) {
+				background: url("../images/blue-loader.svg") rgba(255, 255, 255, .8) no-repeat center;
+			}
+		}
+	}
 }
 
 // body.pattern {
@@ -264,18 +286,18 @@ picture {
 	transform: translate(0, 0)
 }
 
-@media (max-width: 768px) {
-	.go_to_top {
-		bottom: 100px
-	}
-}
-
 .to-top {
 	font-size: 20px
 }
 
 .to-top span {
 	color: #01426A
+}
+
+@media (max-width: 768px) {
+	.go_to_top {
+		bottom: 100px
+	}
 }
 
 @media screen and (max-width: 767px) {
