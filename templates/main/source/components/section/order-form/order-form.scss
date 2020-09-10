@@ -390,6 +390,12 @@
 			padding-left: 15px;
 			line-height: 1;
 		}
+
+		&.basket-form__field_address {
+			textarea {
+				padding-top: 15px;
+			}
+		}
 	}
 
 	.item__title {
@@ -1074,6 +1080,12 @@
 
 				flex: 0 0 100% !important;
 				margin-right: 0;
+			}
+
+			&.basket-form__field_address {
+				textarea {
+					padding-top: 15px;
+				}
 			}
 		}
 
