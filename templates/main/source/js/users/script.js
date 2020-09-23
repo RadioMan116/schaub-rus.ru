@@ -3,8 +3,8 @@ $(document).ready(function () {
 	function hamburger(element, menu) {
 		var button = document.getElementById(element),
 			menu = document.getElementById(menu),
-			menuList = document.querySelector(".menu");
-		menuBottom = document.getElementById("js-header__block_bottom");
+			menuList = document.querySelector(".menu"),
+			menuBottom = document.getElementById("js-header__block_bottom");
 		button.onclick = function () {
 			// Toggle class "opened". Set also aria-expanded to true or false.
 			if (-1 !== button.className.indexOf("opened")) {
@@ -490,11 +490,11 @@ $(document).ready(function () {
 				$(this).addClass("active");
 				mySwiper6.slideNext(500);
 			} else
-				if ($(this).hasClass("active")) {
-					console.log("55");
-					$(this).removeClass("active");
-					mySwiper6.slidePrev(500);
-				}
+			if ($(this).hasClass("active")) {
+				console.log("55");
+				$(this).removeClass("active");
+				mySwiper6.slidePrev(500);
+			}
 		});
 		setInterval(function () {
 			$(".js-button__open").addClass("blink_on");

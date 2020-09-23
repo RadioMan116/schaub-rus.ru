@@ -11,9 +11,9 @@ html {
 }
 
 img {
+	max-width: 100%;
 	// width: 100%;
 	height: auto;
-	max-width: 100%;
 	max-height: 100%;
 	object-fit: contain;
 }
@@ -23,16 +23,14 @@ body.fixed {
 	// width:calc(100% - 17px);
 }
 
-.swiper-container,
-.swiper-container-three,
-.swiper-container-two {
-	margin: 0 auto;
+.swiper-container, .swiper-container-three, .swiper-container-two {
 	position: relative;
-	overflow: hidden;
-	list-style: none;
-	padding: 0 !important;
 	z-index: 1;
 	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0 !important;
+	list-style: none;
 }
 
 .popup {
@@ -81,13 +79,13 @@ h1.title {
 
 .container {
 	.col-md-9 {
-		padding: 0;
 		position: relative;
+		padding: 0;
 
 		@media (min-width: 768px) {
-			margin-left: 7px;
 			flex: 0 0 calc(75% - 7px);
 			max-width: calc(75% - 7px);
+			margin-left: 7px;
 		}
 	}
 
@@ -103,13 +101,13 @@ h1.title {
 div[id^=wait] {
 	position: fixed !important;
 	top: 50% !important;
-	transform: translateX(-50%)translateY(-50%) !important;
 	left: 50% !important;
+	transform: translateX(-50%) translateY(-50%) !important;
 	// <div id="wait_0.4884693106661806"style="background: url(&quot;/bitrix/js/main/core/images/wait.gif&quot;) 10px center no-repeat scroll rgb(252, 247, 209); border: 1px solid rgb(225, 181, 45); color: black; font-family: Verdana, Arial, sans-serif; font-size: 11px; padding: 10px 30px 10px 37px; position: absolute; z-index: 10000; text-align: center; top: 885px; left: 1685px;">Загрузка...</div>
 }
 
 .compensate-for-scrollbar {
-	margin-right: 0px !important;
+	margin-right: 0 !important;
 }
 
 body {
@@ -119,17 +117,17 @@ body {
 
 	&.loading-ajax {
 		&:before {
-			content: '';
-			background: url("../images/blue-loader.svg") rgba(255, 255, 255, .8) no-repeat center 40%;
-			top: 50%;
-			transform: translateX(-50%)translateY(-50%);
-			left: 50%;
-			width: 100vw;
-			height: 100vh;
+			content: "";
 			position: fixed;
 			z-index: 9999;
+			top: 50%;
+			left: 50%;
+			width: 100vw;
 			width: 100vw;
 			height: 100vh;
+			height: 100vh;
+			transform: translateX(-50%) translateY(-50%);
+			background: url("../images/blue-loader.svg") rgba(255, 255, 255, .8) no-repeat center 40%;
 
 			@media screen and (max-width: 767px) {
 				background: url("../images/blue-loader.svg") rgba(255, 255, 255, .8) no-repeat center;
@@ -172,12 +170,12 @@ body {
 // 	background: url('../images/l-rus-pattern.png');
 // }
 .docs-frame {
-	// flex-shrink: 0;
-	max-width: 100%;
-	min-height: 400px;
 	display: flex !important;
 	flex-direction: column;
 	align-items: center;
+	// flex-shrink: 0;
+	max-width: 100%;
+	min-height: 400px;
 	// overflow-y: auto;
 	margin-bottom: 40px;
 
@@ -210,14 +208,14 @@ body {
 
 .button-close {
 	position: absolute;
+	z-index: 10;
 	top: 6px;
 	right: 7px;
-	background: url('../images/close.svg');
-	background-size: 100%;
 	width: 12px;
 	height: 12px;
+	background: url("../images/close.svg");
+	background-size: 100%;
 	cursor: pointer;
-	z-index: 10;
 }
 
 .hide {
@@ -225,19 +223,19 @@ body {
 }
 
 picture {
+	// justify-content: center;
+	display: block;
 	width: 100%;
-	text-align: center;
 	max-width: 100%;
 	max-height: 100%;
+	text-align: center;
 	// display: flex;
 	// align-items: stretch;
 	text-align: center;
-	// justify-content: center;
-	display: block;
 
 	img {
-		height: auto !important;
 		max-width: 100%;
+		height: auto !important;
 		max-height: 100%;
 		object-fit: contain;
 	}
@@ -245,58 +243,43 @@ picture {
 
 .go_to_top {
 	position: fixed;
-	bottom: 150px;
+	z-index: 1000;
 	right: 25px;
-	color: #474646 !important;
-	text-align: center;
-	padding-top: 10px;
+	bottom: 150px;
 	-webkit-transform: translate(0, 300px);
 	transform: translate(0, 300px);
-	z-index: 1000;
+	color: #474646 !important;
+	text-align: center;
 	text-decoration: none;
 
 	&:after {
-		content: 'наверх';
+		content: url("../images/go-up-button-normal-blue.svg");
+		transition: .3s;
+	}
+	&:hover {
+		&:after {
+			content: url("../images/go-up-button-hover-blue.svg");
+		}
 	}
 }
 
-.go_to_top:before {
-	content: '';
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background: url(../images/next_white.svg) 50% 50% no-repeat #394791;
-	box-shadow: 0 0 5px rgba(0, 0, 0, .6);
-	background-size: auto 60%;
-	-webkit-transform: rotate(-90deg);
-	transform: rotate(-90deg);
-	transition: all .4s;
-	position: absolute;
-	top: -45px;
-	left: 50%;
-	margin-left: -25px
-}
-
-.go_to_top:hover:before {
-	margin-top: -5px
-}
 
 .go_to_top.visible_goto {
 	-webkit-transform: translate(0, 0);
-	transform: translate(0, 0)
+	transform: translate(0, 0);
 }
 
 .to-top {
-	font-size: 20px
+	font-size: 20px;
 }
 
 .to-top span {
-	color: #01426A
+	color: #01426a;
 }
 
 @media (max-width: 768px) {
 	.go_to_top {
-		bottom: 100px
+		bottom: 100px;
 	}
 }
 
