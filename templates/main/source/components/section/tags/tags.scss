@@ -1,20 +1,71 @@
 .tags {
 	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 1176px;
 	// margin-top: auto;
 	margin-bottom: 21px;
 	margin-right: auto;
 	margin-left: auto;
-	max-width: 1176px;
-	flex-direction: column;
-	width: 100%;
+
+
+	@media screen and (max-width: 767px) {
+		display: block;
+		order: -1;
+
+		position: relative;
+		overflow-x: auto;
+		margin-bottom: 18px;
+		margin-right: unset;
+		margin-left: unset;
+		padding-bottom: 6px;
+
+		&__container {
+			display: block;
+			overflow-x: auto;
+		}
+
+		&__list {
+			width: 1176px;
+			max-width: 1176px;
+			overflow-x: scroll;
+		}
+
+		&__title {
+			color: #212121;
+			font-family: "Roboto Condensed";
+			font-size: 5vw;
+			font-weight: 400;
+			margin-bottom: 15px;
+		}
+
+		&__all {
+			display: none;
+		}
+
+		&.main-tags {
+			display: block;
+			overflow-x: unset;
+			margin-bottom: 30px;
+			padding-left: 16px;
+		}
+	}
+
+	.container {
+		position: relative;
+	}
+
+	.text-default & {
+		margin: 0 auto 0 0;
+	}
 
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
-		padding: 0;
-		margin: 0;
-		list-style: none;
 		width: 100%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
 
 		&.active {
 			.tags__item {
@@ -25,9 +76,21 @@
 
 	&__item {
 		border: 1px solid #f1f1f1;
+		padding: 5px 11px;
 		margin-right: 4px;
 		margin-bottom: 3px;
-		padding: 5px 11px;
+
+		// &:last-child {
+		// 	margin-right: 0;
+		// }
+
+		&:hover {
+			border: 1px solid #334399;
+		}
+
+		&:hover {
+			background-color: rgba(238, 238, 238, 0.29);
+		}
 		// display: none;
 
 		a {
@@ -43,14 +106,6 @@
 			}
 		}
 
-		// &:last-child {
-		// 	margin-right: 0;
-		// }
-
-		&:hover {
-			border: 1px solid #334399;
-		}
-
 		&.active {
 			border: 1px solid #334399;
 
@@ -63,35 +118,30 @@
 			}
 		}
 
-		&:hover {
-			background-color: rgba(238, 238, 238, 0.29);
-		}
-
-		&.button,
-		&.js-tags_data {
-			order: 2;
-			border: 0;
-			align-items: center;
+		&.button, &.js-tags_data {
 			display: flex;
 			align-items: center;
+			align-items: center;
+			order: 2;
+			border: 0;
 			background-color: transparent;
 			color: $base;
 			cursor: pointer;
 
-			a {
-				border-bottom: 1px dashed $base;
-				line-height: 1;
-			}
-
 			&:after {
-				content: '';
-				background: url('https://icongr.am/entypo/chevron-small-down.svg?color=394791&size=50');
+				content: "";
 				width: 12px;
 				height: 12px;
+				background: url("https://icongr.am/entypo/chevron-small-down.svg?color=394791&size=50");
 				background-size: 22px;
 				background-position: center;
 				background-repeat: no-repeat;
 				margin-left: 5px;
+			}
+
+			a {
+				border-bottom: 1px dashed $base;
+				line-height: 1;
 			}
 		}
 
@@ -109,7 +159,6 @@
 		&.show {
 			display: flex !important;
 		}
-
 	}
 
 	&__title {
@@ -122,81 +171,31 @@
 
 
 	&__all {
-		border-radius: 3px;
+		position: absolute;
+		top: 4px;
+		right: 3px;
 		border: 1px solid $base;
+		padding: 6px 12px;
+		transform: translateY(-4px);
+		border-radius: 3px;
 		color: $base;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 24px;
 		text-transform: uppercase;
-		position: absolute;
-		right: 3px;
-		top: 4px;
-		transform: translateY(-4px);
-		padding: 6px 12px;
 		text-decoration: none !important;
 	}
 
-	.container {
-		position: relative;
-	}
-
 	&.main-tags {
-		margin-bottom: 48px;
 		position: relative;
+		margin-bottom: 48px;
 
 		@media screen and (max-width: 1200px) and (min-width: 768px) {
-			margin: 0 16px 48px;
-			max-width: 100%;
+			flex: 1 1 100%;
 			width: -webkit-fill-available;
-			flex: 1 1 100%
-		}
-	}
-
-	.text-default & {
-		margin: 0 auto 0 0;
-	}
-
-
-	@media screen and (max-width: 767px) {
-		display: block;
-		overflow-x: auto;
-		margin-bottom: 18px;
-		margin-right: unset;
-		margin-left: unset;
-		order: -1;
-
-		position: relative;
-
-		&.main-tags {
-			display: block;
-			overflow-x: unset;
-			margin-bottom: 30px;
-			padding-left: 16px;
-		}
-
-		&__container {
-			display: block;
-			overflow-x: auto;
-		}
-
-		&__list {
-			max-width: 1176px;
-			overflow-x: scroll;
-			width: 1176px;
-		}
-
-		&__title {
-			color: #212121;
-			font-family: "Roboto Condensed";
-			font-size: 5vw;
-			font-weight: 400;
-			margin-bottom: 15px;
-		}
-
-		&__all {
-			display: none;
+			max-width: 100%;
+			margin: 0 16px 48px;
 		}
 	}
 }
