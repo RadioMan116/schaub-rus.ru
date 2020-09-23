@@ -31,7 +31,7 @@
 		// display: none;
 
 		a {
-			color: #394791;
+			color: $base;
 			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 28px;
@@ -55,7 +55,7 @@
 			border: 1px solid #334399;
 
 			a {
-				color: #394791;
+				color: $base;
 				font-family: Arial, sans-serif;
 				font-size: 14px;
 				font-weight: 700;
@@ -76,6 +76,7 @@
 			align-items: center;
 			background-color: transparent;
 			color: $base;
+			cursor: pointer;
 
 			a {
 				border-bottom: 1px dashed $base;
@@ -122,8 +123,8 @@
 
 	&__all {
 		border-radius: 3px;
-		border: 1px solid #394791;
-		color: #394791;
+		border: 1px solid $base;
+		color: $base;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
