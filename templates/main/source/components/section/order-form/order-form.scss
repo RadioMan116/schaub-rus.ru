@@ -6,8 +6,7 @@
 	@media screen and (max-width: 767px) {
 		.table {
 
-			.title__span,
-			.table__item {
+			.title__span, .table__item {
 				&.price {
 					// padding-left: 15px;
 				}
@@ -39,8 +38,7 @@
 				white-space: nowrap;
 				height: unset;
 
-				.decr,
-				.incr {
+				.decr, .incr {
 					display: flex;
 					align-items: center;
 					position: absolute;
@@ -112,6 +110,8 @@
 			}
 
 			&__link {
+				display: flex;
+				align-items: flex-start;
 				width: 85px;
 				height: 85px;
 				padding-left: 25px;
@@ -171,8 +171,7 @@
 			}
 		}
 
-		.swiper-button-next,
-		.swiper-button-prev {
+		.swiper-button-next, .swiper-button-prev {
 			top: 54px !important;
 		}
 
@@ -226,8 +225,7 @@
 				margin-bottom: 4px;
 			}
 
-			.special-offers__text,
-			.strong__price {
+			.special-offers__text, .strong__price {
 				font-size: 14px;
 				font-weight: 500;
 				font-style: normal;
@@ -294,8 +292,7 @@
 				width: 100% !important;
 				padding: 0 0 17px 0 !important;
 
-				.decr,
-				.incr {
+				.decr, .incr {
 					position: unset !important;
 					z-index: 99;
 					height: 35px;
@@ -463,8 +460,7 @@
 				padding-top: 0;
 			}
 
-			input,
-			select {
+			input, select {
 				max-width: unset;
 			}
 
@@ -611,8 +607,7 @@
 		display: flex;
 		flex-wrap: wrap;
 
-		.title__span,
-		.table__item {
+		.title__span, .table__item {
 			display: flex;
 			align-items: center;
 			width: 15%;
@@ -654,8 +649,7 @@
 			font-weight: 700;
 			border-radius: 2px;
 
-			.decr,
-			.incr {
+			.decr, .incr {
 				position: absolute;
 				color: #999999;
 				font-family: Arial, sans-serif;
@@ -720,9 +714,7 @@
 			}
 		}
 
-		&__title,
-		&__items,
-		&__total {
+		&__title, &__items, &__total {
 			justify-content: space-between;
 			width: 100%;
 			padding: 0 33px;
@@ -810,8 +802,7 @@
 		}
 	}
 
-	.swiper-button-prev,
-	.swiper-button-next {
+	.swiper-button-prev, .swiper-button-next {
 		top: 65px !important;
 	}
 
@@ -967,9 +958,7 @@
 			padding-top: 15px;
 		}
 
-		input,
-		textarea,
-		select {
+		input, textarea, select {
 			border: 1px solid #cbcbcb;
 			border-radius: 2px;
 			background-color: #ffffff;
