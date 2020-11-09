@@ -17,7 +17,6 @@
 	}
 
 	&__block {
-
 		position: relative;
 		display: flex;
 		z-index: 3;
@@ -49,7 +48,6 @@
 		.hamburger {
 			display: none;
 		}
-
 	}
 
 	&__link {
@@ -240,11 +238,7 @@
 			&:before {
 				background: url("../images/musica-searcher-1.svg") no-repeat;
 			}
-
 		}
-
-
-
 	}
 
 	&__favorite,
@@ -257,7 +251,6 @@
 		text-decoration: none !important;
 		flex-shrink: 0;
 		align-items: center;
-
 
 		&:before {
 			content: '';
@@ -280,7 +273,6 @@
 		margin-right: 38px;
 
 		&:hover {
-
 			&:before {
 				background: url("../images/header-fav-active.svg") no-repeat;
 			}
@@ -299,7 +291,6 @@
 		margin-right: 35px;
 
 		&:hover {
-
 			&:before {
 				background: url("../images/header-compare-active.svg") no-repeat;
 			}
@@ -319,7 +310,6 @@
 
 		&-open,
 		&:hover {
-
 			&:before {
 				background: url("../images/shopping-cart__color.svg") no-repeat;
 			}
@@ -370,7 +360,6 @@
 	// .time-work {
 	// 	display: none;
 	// }
-
 	@media screen and (max-width: 767px) {
 		z-index: 99999;
 
@@ -378,7 +367,6 @@
 			&__blocks * {
 				transition: 0s;
 			}
-
 
 			&__img {
 				display: none;
@@ -402,35 +390,38 @@
 				right: -5px;
 			}
 
+			&__block_bottom {
+				display: none;
 
-				&__block_bottom {
-					display: none;
-
-					&.active {
-						display: block;
-						transform: scale(1);
-						position: fixed;
-						top: 57px;
-						left: 0;
-						width: 100%;
-						height: 100%;
-						transition: transform 0.3s;
-						display: flex;
-						align-items: baseline;
-						box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
-						background-color: #ffffff;
-						overflow: auto;
-						padding-bottom: 12vh;
-						padding-top: 52px;
-					}
+				&.active {
+					display: block;
+					// transform: scale(1);
+					position: static;
+					// top: 57px;
+					// left: 0;
+					width: 100%;
+					height: auto;
+					transition: transform 0.3s;
+					display: flex;
+					align-items: baseline;
+					box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
+					background-color: #ffffff;
+					// overflow-y: auto;
+					padding-bottom: 12vh;
+					padding-top: 0px;
 				}
+			}
+
+			&__blocks.active {
+				overflow-y: auto;
+				height: 100vh;
+			}
 
 			&__block_top {
 				height: 60px;
-				border-bottom: 1px solid #f1f1f1;
+				// border-bottom: 1px solid #f1f1f1;
 				align-items: flex-start;
 				padding-top: 16px;
-
 
 				.header__icons {
 					display: flex;
@@ -448,7 +439,8 @@
 					.header__favorite,
 					.header__compare {
 						display: flex;
-						&:before{
+
+						&:before {
 							width: 22px;
 						}
 					}
@@ -498,7 +490,6 @@
 				}
 
 				&:hover {
-
 					&:before {
 						background-size: 22px !important;
 					}
@@ -514,7 +505,6 @@
 				align-items: center;
 				width: auto;
 				height: 24px;
-
 
 				&:before {
 					background-size: 23px !important;
@@ -532,7 +522,6 @@
 				}
 
 				&:hover {
-
 					// &:before {
 					// 	background-size: 22px !important;
 					// }
@@ -542,7 +531,6 @@
 					top: -3px;
 					left: 13px;
 				}
-
 			}
 
 			&__compare {
@@ -554,7 +542,6 @@
 				align-items: center;
 				width: auto;
 				height: 24px;
-
 
 				&:before {
 					background-size: 23px !important;
@@ -572,7 +559,6 @@
 				}
 
 				&:hover {
-
 					// &:before {
 					// 	background-size: 22px !important;
 					// }
@@ -583,7 +569,6 @@
 					left: 13px;
 				}
 			}
-
 
 			&__search {
 				margin-right: 0px;
@@ -598,7 +583,6 @@
 				}
 
 				&:hover {
-
 					&:before {
 						// background-size: 19px !important;
 					}
@@ -607,7 +591,6 @@
 
 			// &__favorite {
 			// 	// width: 26px;
-
 			// 	// .header__number {
 			// 	// 	position: absolute;
 			// 	// 	/* Style for "Oval" */
@@ -626,13 +609,11 @@
 			// 	// 	right: 6px;
 			// 	// }
 			// }
-
 			// &__compare {
 			// 	width: auto;
 			// 	max-width: 40px;
 			// 	margin-right: 11px;
 			// }
-
 			&__mobile-tel {
 				width: 24px;
 				height: 100%;
@@ -649,8 +630,8 @@
 				width: auto;
 				max-width: 40px;
 				margin-right: -0px;
-
 			}
+
 			// &__number {
 			// 	font-size: 13px;
 			// 	font-weight: normal;
@@ -661,9 +642,6 @@
 			// 	color: #666666;
 			// 	padding-top: 4px;
 			// }
-
-
-
 			&__form {
 				width: 95%;
 			}
@@ -719,7 +697,6 @@
 						height: 0px;
 						margin-top: -5px;
 					}
-
 				}
 			}
 		}
@@ -742,7 +719,6 @@
 				width: 18px;
 				height: 18px;
 				background: url('../images/rectangle-6.svg') 0/18px;
-
 			}
 		}
 
@@ -754,6 +730,4 @@
 			}
 		}
 	}
-
-
 }

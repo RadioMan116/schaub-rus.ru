@@ -181,7 +181,7 @@
 @media (max-width: 767px) {
 	.menu.active {
 		// height: 100vh;
-		height: 410px;
+		// height: 410px;
 		// overflow-y: scroll;
 	}
 
@@ -313,7 +313,9 @@
 					margin-top: 0;
 					margin-right: -17px;
 				}
-
+				.dropdown-menu__list{
+					overflow: unset;
+				}
 
 				.dropdown-menu__title {
 					box-shadow: none !important;
