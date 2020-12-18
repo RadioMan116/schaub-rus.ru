@@ -4,7 +4,8 @@
 	//   flex-wrap: wrap;
 	//   margin-bottom: 63px;
 	//   flex-direction: row;
-	h4,.h4 {
+	h4,
+	.h4 {
 		margin-bottom: 12px;
 	}
 
@@ -30,6 +31,15 @@
 	}
 
 	h5 {
+		color: #394791;
+		font-family: "Roboto Condensed";
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 30px;
+		margin-bottom: 24px;
+	}
+
+	.h5 {
 		color: #394791;
 		font-family: "Roboto Condensed";
 		font-size: 18px;
@@ -75,12 +85,9 @@
 	// 	z-index: 99;
 	// 	margin-top: 0 !important;
 	// 	margin-bottom: 16px;
-
-
 	// 	&~p {
 	// 		width: calc(100% - 304px);
 	// 	}
-
 	// }
 	p {
 		color: #262626;
@@ -97,14 +104,10 @@
 		margin: 39px 0 42px;
 	}
 
-
-
 	// .product-card__collection
-
 	.product-card {
 
 		// .product-card__collection
-
 		&__collection {
 			position: relative;
 			margin: 58px 0 60px;
@@ -112,7 +115,6 @@
 			.tags {
 
 				// .tags__title
-
 				&__title {
 					color: #212121;
 					font-family: "Roboto Condensed";
@@ -126,7 +128,6 @@
 				}
 
 				// .tags__container
-
 				&__container {
 					display: flex;
 					flex-wrap: wrap;
@@ -134,13 +135,11 @@
 				}
 
 				// .tags__list
-
 				&__list {
 					padding-bottom: 160px;
 				}
 
 				// .tags__item
-
 				&__item {
 					max-width: 100%;
 					border: 0;
@@ -150,8 +149,8 @@
 					// height: 200px;
 					display: flex;
 					align-items: baseline;
-					// position: absolute;
 
+					// position: absolute;
 					&:hover {
 						background: 0;
 					}
@@ -162,7 +161,6 @@
 				}
 
 				// .tags__link
-
 				&__link {
 					color: $base;
 					font-family: "Roboto Condensed";
@@ -174,10 +172,10 @@
 					border: 1px solid transparent;
 					padding: 11px 26px;
 					margin-left: 11px;
+
 					// position: absolute;
 					// top: 39px;
 					// left: 0;
-
 					&:hover {
 						border: 1px solid $base;
 					}
@@ -194,20 +192,16 @@
 				.tags__item+.tags__item {
 					// left: ;
 				}
-
 			}
 
 			.collection {
 
 				// .collection__link
-
 				&__link {
 					display: flex;
-
 					flex-direction: column;
 					position: relative;
 					padding: 16px 18px;
-
 					text-decoration: none !important;
 
 					&:hover {
@@ -218,7 +212,6 @@
 				}
 
 				// .collection__text
-
 				&__text {
 					color: #333333;
 					font-family: "Roboto Condensed";
@@ -232,7 +225,6 @@
 				}
 
 				// .collection__pic
-
 				&__pic {
 					width: 100%;
 					height: 250px;
@@ -243,9 +235,7 @@
 
 						// height: 95px;
 						img {
-
 							// height: fit-content !important;
-
 						}
 					}
 
@@ -257,7 +247,6 @@
 				}
 
 				// .collection__buy
-
 				&__buy {
 					position: absolute;
 					right: 18px;
@@ -270,7 +259,6 @@
 					width: 40px;
 					height: 34px;
 					border-radius: 3px;
-
 					font-family: Roboto Condensed;
 					font-size: 14px;
 					background-color: $base;
@@ -280,7 +268,6 @@
 					font-weight: 400;
 					text-transform: uppercase;
 					margin: 0;
-
 					line-height: 1;
 					display: flex;
 					align-items: center;
@@ -291,13 +278,11 @@
 				}
 
 				// .collection__info
-
 				&__info {
 					margin-top: 18px;
 				}
 
 				// .collection__sale
-
 				&__sale {
 					font-size: 20px;
 					line-height: 1.2;
@@ -350,7 +335,6 @@
 						margin-top: 18px;
 						padding-left: 17px;
 
-
 						&.link {
 							color: $base;
 							margin-top: 24px;
@@ -366,10 +350,7 @@
 						}
 					}
 				}
-
-
 			}
-
 
 			.swiper-container {
 				position: absolute;
@@ -382,9 +363,7 @@
 				// 	left: unset;
 				// 	position: relative;
 				// }
-
 			}
-
 
 			.cur {
 				z-index: 9;
@@ -393,14 +372,12 @@
 					// position: absolute;
 					// width: 100%;
 					// left: -100vw;
-
 					// &.active {
 					left: 0;
 					opacity: 1;
 					z-index: 9;
 					// position: relative;
 					// }
-
 				}
 
 				.tags__link {
@@ -462,8 +439,6 @@
 			.collection__prev,
 			.collection__next {
 				display: none;
-
-
 			}
 
 			.cur {
@@ -472,8 +447,6 @@
 				.collection__prev,
 				.collection__next {
 					display: flex;
-
-
 				}
 			}
 		}
@@ -507,7 +480,6 @@
 	}
 
 	@media screen and (max-width: 767px) {
-
 		margin-bottom: 4px;
 
 		iframe {
@@ -542,7 +514,8 @@
 			margin-bottom: 26px;
 		}
 
-		h4,.h4 {
+		h4,
+		.h4 {
 			margin-bottom: 0;
 		}
 
@@ -552,8 +525,6 @@
 		}
 
 		p {}
-
-
 
 		.product-card__collection {
 			margin-top: 10px;
@@ -598,7 +569,6 @@
 				padding-bottom: 28px !important;
 			}
 
-
 			.cur {
 				z-index: 9;
 
@@ -624,7 +594,6 @@
 				padding: 24px 0px 25px 0px;
 				margin: 0 14px;
 				height: auto;
-
 			}
 
 			.collection__pic {
@@ -678,7 +647,6 @@
 
 			.collection__sale {
 				width: calc(100% - 55px);
-
 			}
 
 			.collection__buy {
@@ -696,8 +664,6 @@
 					margin: 0 5px;
 				}
 			}
-
-
 		}
 
 		.special-offers.catalog .container {
